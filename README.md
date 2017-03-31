@@ -1,5 +1,5 @@
-# eloquente-js-exercises
-Repository to the DOM-Pig-Game from the https://www.udemy.com/the-complete-javascript-course course
+# DOM Pig Game
+git 
 
 ![alt tag](print.png)
 
