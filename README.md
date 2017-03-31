@@ -1,5 +1,4 @@
 # DOM Pig Game
-git 
 
 ![alt tag](print.png)
 
