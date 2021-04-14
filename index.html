@@ -1,41 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,600" rel="stylesheet" type="text/css">
-        <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
-        <link type="text/css" rel="stylesheet" href="style.css">
-        
-        <title>Pig Game</title>
-    </head>
+<html>
+<head>
+    <style>
+        h1 {text-align: center;}
+    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <div class="center">
+        <h1>Stick Man Game</h1>
+    </div>
 
-    <body>
-        <div class="wrapper clearfix">
-            <div class="player-0-panel active">
-                <div class="player-name" id="name-0">Player 1</div>
-                <div class="player-score" id="score-0">43</div>
-                <div class="player-current-box">
-                    <div class="player-current-label">Current</div>
-                    <div class="player-current-score" id="current-0">11</div>
-                </div>
-            </div>
-            
-            <div class="player-1-panel">
-                <div class="player-name" id="name-1">Player 2</div>
-                <div class="player-score" id="score-1">72</div>
-                <div class="player-current-box">
-                    <div class="player-current-label">Current</div>
-                    <div class="player-current-score" id="current-1">0</div>
-                </div>
-            </div>
-            
-            <button class="btn-new"><i class="ion-ios-plus-outline"></i>New game</button>
-            <button class="btn-roll"><i class="ion-ios-loop"></i>Roll dice</button>
-            <button class="btn-hold"><i class="ion-ios-download-outline"></i>Hold</button>
-            
-            <img src="dice-5.png" alt="Dice" class="dice">
-        </div>
-        
-        <script src="app.js"></script>
-    </body>
+
+</head>
+<body>
+<pre class="tab">Choose your fighter</pre>
+<div id = "Fujaks"></div>
+<div id = "Trakais"></div>
+<div id = "Janka"></div>
+<div id = "Naidigais"></div>
+
+<div id = "damagePlace"></div>
+<div id = "damageImpact"></div>
+
+<div id="vards1"></div>
+<div id="vards2"></div>
+<div id="vards3"></div>
+<div id="vards4"></div>
+
+<div id = "Enemy1"></div>
+<div id = "Enemy2"></div>
+<div id = "Enemy3"></div>
+<div id = "Enemy4"></div>
+
+<div id="sliktais1"></div>
+<div id="sliktais2"></div>
+<div id="sliktais3"></div>
+<div id="sliktais4"></div>
+
+<div id ="Poga1" onclick=takeTurn('Fujaks')></div>
+<div id ="Poga2" onclick=takeTurn('Trakais')></div>
+<div id ="Poga3" onclick=takeTurn('Janka')></div>
+<div id ="Poga4" onclick=takeTurn('Naidigais')></div>
+
+<div id ="saviens1" onclick=choiceOffense('saviens')></div>
+<div id ="saviens2" onclick=choiceOffense('bazuka')></div>
+<div id ="gainHP" onclick=choiceOffense('gainHP')></div>
+<div id ="dodge" onclick=choiceOffense('dodge')></div>
+
+<div id ="enemyButton1" onclick=attackType('Enemy1')></div>
+<div id ="enemyButton2" onclick=attackType('Enemy2')></div>
+<div id ="enemyButton3" onclick=attackType('Enemy3')></div>
+<div id ="enemyButton4" onclick=attackType('Enemy4')></div>
+
+<div id ="Poga11" onclick=attackType('Fujaks')></div>
+<div id ="Poga22" onclick=attackType('Trakais')></div>
+<div id ="Poga33" onclick=attackType('Janka')></div>
+<div id ="Poga44" onclick=attackType('Naidigais')></div>
+
+<script src="script.js"></script>
+</body>
 </html>
